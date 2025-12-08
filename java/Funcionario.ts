@@ -1,7 +1,7 @@
 export default class Funcionario{
       protected nome: string =""
       protected idade: number = 0
-      protected sexo: string = "M"
+      protected sexo: string = ""
       protected endereco: string = ""
       protected numerotel: number = 0
       protected cargo : string = ""
