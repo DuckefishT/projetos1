@@ -1,6 +1,7 @@
 
 
 
+
 const data = [
     {nome:"Tiago", idade:19, sexo:"masculino",gmail:"tiagomeng2@gmail.com"},
     {nome:"Camila", idade:20, sexo:"feminino",gmail:"camilasanto@gmail.com"},
@@ -9,89 +10,89 @@ const data = [
 
 //find
 
-//const user = data.find((user) => {
-  // return user.idade == 19 && user.nome == "Guilherme"
-//})
+const user = data.find((user4) => {
+   return user4.idade == 19 && user4.nome == "Guilherme"
+})
 
 
 //Filter
-//const users = data.filter((user) =>{
-  // return user.idade == 19;
-//})
+const users = data.filter((user3) =>{
+   return user3.idade == 19;
+})
 
-//console.log(user)
-//console.log(users)
+console.log(user3)
+console.log(users)
 
 //Find index
-//const Indexuser = data.findIndex((user) =>{
-  // return user.nome === "Camila"
-//})
+const Indexuser = data.findIndex((user2) =>{
+   return user2.nome === "Camila"
+})
 
-//console.log(Indexuser);
+console.log(Indexuser);
 
 //map
-//const usermap = data.map((user, index) =>{
-  //if (user.idade <= 19){
-    //user.idade +=1;
-  //}
-  //return{
-    //nome: user.nome,
-    //idade: user.idade,
+const usermap = data.map((user1, index) =>{
+  if (userq.idade <= 19){
+    user1.idade +=1;
+  }
+  return{
+    nome: user1.nome,
+    idade: user1.idade,
     
-  //}
-//})
+  }
+})
 
-//console.log(usermap);
+console.log(usermap);
 
-//console.log(data.reverse())
+console.log(data.reverse())
 
 //Some
 
-//const usersome = data.some((user) =>  {
-  //return user.idade == 21;
-//})
+const usersome = data.some((user5) =>  {
+  return user5.idade == 21;
+})
 
-//console.log(usersome);
+console.log(usersome);
 
 const data1 = [1,2,3,4,5,6,7,8,9,10]
 
-//const pares = data1.filter ((par) => {
-  //return par%2 == 0;
-//})
+const pares = data1.filter ((par) => {
+  return par%2 == 0;
+})
 
-//console.log(pares)
+console.log(pares)
 
-//data.forEach((item,index,array) => {
-   // console.log(item)
-    //console.log(index)
-//})
+data.forEach((item,index,array) => {
+    console.log(item)
+    console.log(index)
+})
 
-//for (datan in data1){
-  //console.log(datan)
-//}
+for (datan in data1){
+  console.log(datan)
+}
 
-//for (datan of data1){
-  //console.log(datan)
-//}
-//console.log("Olá Node.js")
+for (datan of data1){
+  console.log(datan)
+}
+console.log("Olá Node.js")
 
 
 //PROMISE
 
-//let d = new Promise((resolve, reject) =>{
-  //let a = 1+1
-  //if (a==2){
-     //resolve('Sucess')
-   //} else{
-   //reject('Failed')
-   //}
-//})
+let d = new Promise((resolve, reject) =>{
+  let a = 1+1
+  if (a==2){
+     resolve('Sucess')
+   } else{
+   reject('Failed')
+   }
+})
 
-//d.then((message) => {
- // console.log('This is in the then ' + message)
-//}).catch((err) => {
-  //console.log('This is the catch ' + err)
-//})
+d.then((message) => {
+  console.log('This is in the then ' + message)
+}).catch((err) => {
+  console.log('This is the catch ' + err)
+})
 
 
 //SetTimeout
