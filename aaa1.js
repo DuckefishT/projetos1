@@ -19,7 +19,7 @@ const users = data.filter((user3) =>{
    return user3.idade == 19;
 })
 
-console.log(user3)
+console.log((user3))
 console.log(users)
 
 //Find index
