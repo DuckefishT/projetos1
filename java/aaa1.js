@@ -1,7 +1,5 @@
 
 
-
-
 const data = [
     {nome:"Tiago", idade:19, sexo:"masculino",gmail:"tiagomeng2@gmail.com"},
     {nome:"Camila", idade:20, sexo:"feminino",gmail:"camilasanto@gmail.com"},
@@ -12,13 +10,13 @@ const data = [
 
 const user = data.find((user4) => {
    return user4.idade == 19 && user4.nome == "Guilherme"
-})
+}) //Uma função que irá encontrar um algum elemento da array que a idade seja 19 e o nome seja Guilherme
 
 
 //Filter
 const users = data.filter((user3) =>{
-   return user3.idade == 19;
-})
+   return user3.idade == 19; 
+}) //Uma função que filtar os elementos da array deixando apenas o elemento que tenha a idade 19
 
 console.log(user3)
 console.log(users)
@@ -62,19 +60,19 @@ const pares = data1.filter ((par) => {
 
 console.log(pares)
 
-data.forEach((item,index,array) => {
-    console.log(item)
-    console.log(index)
-})
+//data.forEach((item,index,array) => {
+  //  console.log(item)
+  //  console.log(index)
+//})
 
-for (datan in data1){
-  console.log(datan)
-}
+//for (datan in data1){
+  //console.log(datan)
+//}
 
-for (datan of data1){
-  console.log(datan)
-}
-console.log("Olá Node.js")
+//for (datan of data1){
+  //console.log(datan)
+//}
+//console.log("Olá Node.js")
 
 
 //PROMISE
@@ -106,6 +104,7 @@ fetch("https://rickandmortyapi.com/api/character")
 })
 .catch(error =>{
     console.error("Erro na aquisição" + error)
-})
+}) 
+}, 2000)  //Um get de http de uma API que irá rodar após 2 segundos
 
-}, 2000)
+
